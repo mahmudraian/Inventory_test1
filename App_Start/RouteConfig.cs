@@ -16,7 +16,7 @@ namespace Inventory_exam
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Auth", action = "Login", id = UrlParameter.Optional }
             );
         }
     }
