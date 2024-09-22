@@ -24,14 +24,14 @@
                 </ul>
             </div>
             <div class="row" style="float:right;color:white;padding:5px;">
-                <div class="col col-6" style="color:white;border:1px solid;border-radius:50px;padding:5px;">
+                <div class="col col-6" style="text-align: center;color: white; border: 1px solid; border-radius: 50px; padding: 5px;">
                     Raian
                 </div>
                 <div class="col col-6">
-                    <button>Logout</button>
+                 
                     @using (Html.BeginForm("logout", "Auth", FormMethod.Post))
                     {
-                        <input type="submit" class="btn btn-primary" value="login" onclick='return ValidateLogin()' style="width:100%;max-width:100%" />
+                        <input type="submit" class="btn" value="logout" onclick='return logout()' style="color:white;" />
                     }
 
                 </div>
@@ -42,7 +42,7 @@
     </nav>
 
 
-    <div style="position: absolute; left: 0px; bottom: 0px; width: 2500px; top: 56px;margin:10px; background: #ffffff">
+    <div style="position: absolute; left: 0px; bottom: 0px; width: 2500px; top: 56px; background: #ffffff">
          
            
           <ul class="nav flex-column sidebar">
