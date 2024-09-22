@@ -26,12 +26,13 @@
             <div class="row" style="float:right;color:white;padding:5px;">
                 <div class="col col-6" style="text-align: center;color: white; border: 1px solid; border-radius: 50px; padding: 5px;">
                     Raian
+
                 </div>
                 <div class="col col-6">
                  
-                    @using (Html.BeginForm("logout", "Auth", FormMethod.Post))
+                    @using (Html.BeginForm("Logout", "Auth", FormMethod.Post))
                     {
-                        <input type="submit" class="btn" value="logout" onclick='return logout()' style="color:white;" />
+                        <input type="submit" class="btn" value="Log Out" onclick='return logout()' style="color:white;" />
                     }
 
                 </div>

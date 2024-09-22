@@ -26,6 +26,7 @@ namespace Inventory_exam.Controllers
             {
                 if (name == "Raian" && password == "123456")
                 {
+                    Session["user"] = "Raian Session";
                     ViewBag.Message = "Login Success";
                     RedirectToAction("Dashnoard", "Home");
 
@@ -41,7 +42,15 @@ namespace Inventory_exam.Controllers
             return View(model);
 
         }
+        
 
+          public ActionResult Logout(Account model)
+        {
+            
+
+            return View(model);
+
+        }
 
     }
 }
